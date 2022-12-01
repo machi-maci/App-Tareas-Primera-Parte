@@ -1,0 +1,18 @@
+[
+    {
+        "titulo": "Argentina vs Arabia",
+        "estado": "Terminada"
+    },
+    {
+        "titulo": "Argentina vs Mexico",
+        "estado": "Terminada"
+    },
+    {
+        "titulo": "Argentina vs Polonia",
+        "estado": "En Progreso"
+    },
+    {
+        "titulo": "Argentina vs Australia",
+        "estado": "Pendiente"
+    }
+]
