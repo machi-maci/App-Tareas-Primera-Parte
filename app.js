@@ -18,6 +18,6 @@ switch (process.argv[2]) {
 function listar () {
 
     dataDescomprimidaAArray.forEach(element => {
-        console.log(`El titulo: ${element.titulo} esta en estado ${element.estado}`);
+        console.log(`El titulo: ${element.titulo} esta en estado: ${element.estado}`);
     });
 }
