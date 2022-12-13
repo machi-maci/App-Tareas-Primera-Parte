@@ -1,7 +1,24 @@
 const fs = require('fs');
+const path = require('path');
+const { transferableAbortSignal } = require('util');
 
 let data = fs.readFileSync('./data/tareas.json');
 let dataDescomprimidaAArray = JSON.parse(data);
+
+
+
+let obj = {titulo: "Argentina vs Paises Bajos", estado: "Terminado"};
+let dataComprimida = JSON.stringify(obj);
+
+dataDescomprimidaAArray.push(dataComprimida);
+
+//fs.writeFileSync(path.resolve(__dirname.'./data/tareas.json'));
+
+
+
+
+
+
 
 switch (process.argv[2]) {
     case 'Listar':
@@ -21,3 +38,7 @@ function listar () {
         console.log(`El titulo: ${element.titulo} esta en estado: ${element.estado}`);
     });
 }
+
+
+
+
